@@ -13,3 +13,6 @@ def my_education():
 @app.route("/experience")
 def my_experience():
     return "<h1>My experience in school and internships</h1>"
+
+#if __name__ == '__main__':
+ #   app.run(debug=True)
