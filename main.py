@@ -10,7 +10,7 @@ def curriculum():
 @app.route("/education")
 def my_education():
     return render_template('education.html')
-@app.route("/experience")
+#@app.route("/experience")
 
-#if __name__ == '__main__':
- #   app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
