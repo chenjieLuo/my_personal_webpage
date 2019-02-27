@@ -9,10 +9,8 @@ def curriculum():
     return render_template('curriculum.html')
 @app.route("/education")
 def my_education():
-    return "<h1>My Education</h1>"
+    return render_template('education.html')
 @app.route("/experience")
-def my_experience():
-    return "<h1>My experience in school and internships</h1>"
 
 #if __name__ == '__main__':
  #   app.run(debug=True)
