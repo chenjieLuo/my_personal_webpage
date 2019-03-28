@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for
 from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
 
-#app.config['SECRET_KEY'] = 'b581b86194d44e7069a0664a7f4313ee'
+app.config['SECRET_KEY'] = 'b581b86194d44e7069a0664a7f4313ee'
 
 @app.route("/")
 @app.route("/home")
@@ -12,6 +12,16 @@ def home():
 @app.route("/curriculum")
 def curriculum():
     return render_template('curriculum.html')
+
+@app.route("/register")
+def register():
+    form = RegistrationForm()
+    return render_template('register.html',title='Register',form=form)
+
+@app.route("/login")
+def login():
+    form = LoginForm()
+    return render_template('login.html',title='Login',form=form)
 
 @app.route("/education")
 def my_education():
