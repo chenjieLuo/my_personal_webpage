@@ -23,8 +23,11 @@ def home():
 def curriculum():
     return render_template('curriculum.html')
 @app.route("/education")
-def my_education():
+def education():
     return render_template('education.html')
+@app.route("/projects")
+def projects():
+	return render_template('projects.html')
 #@app.route("/experience")
 
 #if __name__ == '__main__':
